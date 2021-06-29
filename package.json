@@ -2,9 +2,14 @@
   "name": "dep-dev",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://jaesikk.github.io/vue-devop",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "predeploy": "vue-cli-service build",
+    "deploy": "gh-pages -d dist",
+    "clean": "gh-pages-clean",
+    "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
@@ -18,6 +23,7 @@
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
+    "gh-pages": "^3.2.3",
     "vue-template-compiler": "^2.6.11"
   },
   "eslintConfig": {
